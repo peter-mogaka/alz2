@@ -8,18 +8,22 @@ terraform {
       version = ">= 3.74.0"
     }
   }
-  backend "azurerm" {}
+  backend "azurerm" {
+    use_oidc = true
+  }
 }
 
 # Define the provider configuration
 provider "azurerm" {
   features {}
+  use_oidc = true
 }
 
 provider "azurerm" {
   alias                      = "management"
   subscription_id            = var.subscription_id_management
   skip_provider_registration = true
+  use_oidc = true
   features {}
 }
 
@@ -27,5 +31,6 @@ provider "azurerm" {
   alias                      = "connectivity"
   subscription_id            = var.subscription_id_connectivity
   skip_provider_registration = true
+  use_oidc = true
   features {}
 }
