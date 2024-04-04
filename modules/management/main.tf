@@ -15,7 +15,7 @@ terraform {
 provider "azurerm" {
   features {}
 
-  subscription_id = var.subscription_id_management
+  #subscription_id = var.subscription_id_management
 }
 
 # Get the current client configuration from the AzureRM provider
