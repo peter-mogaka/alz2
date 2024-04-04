@@ -9,7 +9,7 @@ on:
 
 jobs:
   validate_and_plan:
-    uses: peter-mogaka/ALZ/.github/workflows/ci_template.yaml@main
+    uses: peter-mogaka/ALZ2/.github/workflows/ci_template.yaml@main
     name: 'CI'
     permissions:
       id-token: write

@@ -17,7 +17,7 @@ on:
 
 jobs:
   plan_and_apply:
-    uses: peter-mogaka/ALZ/.github/workflows/cd_template.yaml@main
+    uses: peter-mogaka/ALZ2/.github/workflows/cd_template.yaml@main
     name: 'CD'
     permissions:
       id-token: write
