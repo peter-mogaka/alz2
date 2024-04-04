@@ -38,11 +38,11 @@ module "alz" {
   }
 
   # Base module configuration settings
-  root_parent_id   = data.azurerm_client_config.current.tenant_id
-  root_id          = var.root_id
-  root_name        = var.root_name
-  library_path     = "${path.module}/lib"
-  default_location = var.primary_location
+  root_parent_id    = data.azurerm_client_config.current.tenant_id
+  root_id           = var.root_id
+  root_name         = var.root_name
+  library_path      = "${path.module}/lib"
+  default_location  = var.primary_location
   disable_telemetry = true
   # Enable creation of the core management group hierarchy
   # and additional custom_landing_zones
