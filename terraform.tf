@@ -8,9 +8,7 @@ terraform {
       version = ">= 3.74.0"
     }
   }
-  backend "azurerm" {
-    use_oidc = true
-  }
+  backend "azurerm" {}
 }
 
 # Define the provider configuration
