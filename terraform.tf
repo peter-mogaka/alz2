@@ -15,10 +15,6 @@ terraform {
 provider "azurerm" {
   features {}
 }
-provider "azurerm" {
-  skip_provider_registration = true
-  features {}
-}
 
 provider "azurerm" {
   alias                      = "management"
