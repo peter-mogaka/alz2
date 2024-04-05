@@ -21,7 +21,7 @@ jobs:
     runs-on:
       ubuntu-latest
     concurrency: mgmt-tfstate
-    environment: moj-mgmt-apply
+    environment: moj-mgmt-plan
     permissions:
       id-token: write
       contents: read
