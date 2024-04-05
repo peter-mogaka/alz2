@@ -11,7 +11,7 @@ terraform {
   backend "azurerm" {}
 }
 
-# Define the provider configuration
+# Define the provider configuration.
 provider "azurerm" {
   features {}
 }
