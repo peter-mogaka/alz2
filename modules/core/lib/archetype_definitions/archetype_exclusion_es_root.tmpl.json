@@ -1,19 +1,6 @@
 {
   "exclude_es_root": {
     "policy_assignments": [
-      "Audit-UnusedResources",
-      "Deny-Classic-Resources",
-      "Deny-UnmanagedDisk",
-      "Deploy-ASC-Monitoring",
-      "Deploy-AzActivity-Log",
-      "Deploy-MDEndpoints",
-      "Deploy-MDFC-OssDb",
-      "Deploy-MDFC-Config",
-      "Deploy-MDFC-SqlAtp",
-      "Deploy-Resource-Diag",
-      "Deploy-VM-Monitoring",
-      "Deploy-VMSS-Monitoring",
-      "Enforce-ACSB"
     ],
     "policy_definitions": [
       
