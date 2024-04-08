@@ -21,7 +21,7 @@ jobs:
         uses: hashicorp/setup-terraform@v2
 
       - name: Terraform Format Check
-        run: terraform fmt -recursive #-check
+        run: terraform fmt -check
 
       - name: Terraform Init
         run: terraform init -backend=false
@@ -35,7 +35,7 @@ jobs:
     runs-on:
       ubuntu-latest
     concurrency: mgmt-tfstate
-    environment: moj-mgmt-plan
+    environment: moj-mgmt-apply
     permissions:
       # NOTE: When modifying the token subject claims and adding `environment`.
       # If the `id-token` permission is granted at the workflow level
