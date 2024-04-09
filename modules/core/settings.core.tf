@@ -5,6 +5,19 @@ locals {
     root = {
       access_control = {}
       archetype_id   = "es_root"
+      enforcement_mode = {
+         Audit-UnusedResources = false
+         Deny-Classic-Resources = false
+         Deploy-ASC-Monitoring = false
+         Deploy-AzActivity-Log = false
+         Deploy-MDEndpoints = false
+         Deploy-MDFC-Config = false
+         Deploy-MDFC-OssDb = false
+         Deploy-MDFC-SqlAtp = false
+         Deploy-Resource-Diag = false
+         Deploy-VM-Monitoring = false
+      }
+
       parameters = {
         Deploy-MDFC-Config = {
           emailSecurityContact                        = "this_user@replace.me"
