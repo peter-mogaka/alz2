@@ -10,7 +10,7 @@ locals {
       archetype_id   = "es_root"
 
 #overriding the policy enforcement mode 
-#for the  @var.root-id management group
+#for the  @var.root-id management group 
 
       enforcement_mode = {
          Audit-UnusedResources = false
