@@ -1,6 +1,6 @@
 # Configure custom connectivity resources settings
-locals { /*
-  configure_connectivity_resources = {
+locals { 
+  configure_connectivity_resources = { /*
     settings = {
       # Create two hub networks with hub mesh peering enabled
       # and link to DDoS protection plan if created
@@ -34,6 +34,6 @@ locals { /*
     # Set the default location
     location = var.primary_location
     # Create a custom tags input
-    tags = var.connectivity_resources_tags
-  } */
+    tags = var.connectivity_resources_tags */
+  } 
 }
