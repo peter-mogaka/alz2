@@ -1,5 +1,5 @@
 # Configure custom connectivity resources settings
-locals {
+locals { /*
   configure_connectivity_resources = {
     settings = {
       # Create two hub networks with hub mesh peering enabled
@@ -35,5 +35,5 @@ locals {
     location = var.primary_location
     # Create a custom tags input
     tags = var.connectivity_resources_tags
-  }
+  } */
 }
