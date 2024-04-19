@@ -2,9 +2,16 @@
 # addition to the core resource hierarchy
 locals {
   archetype_config_overrides = {
+#overriding the policy assignment values 
+#for the  @var.root-id management group
+
     root = {
       access_control = {}
       archetype_id   = "es_root"
+
+#overriding the policy enforcement mode 
+#for the  @var.root-id management group 
+
       enforcement_mode = {
          Audit-UnusedResources = false
          Deny-Classic-Resources = false
@@ -17,6 +24,9 @@ locals {
          Deploy-Resource-Diag = false
          Deploy-VM-Monitoring = false
       }
+
+#overriding the policy parameters
+#for the  @var.root-id management group
 
       parameters = {
         Deploy-MDFC-Config = {
